@@ -10,6 +10,6 @@ export function Button({ onClick }) {
   );
 }
 
-// Button.propTypes = {
-//   LoadMorePage: PropTypes.func.isRequired,
-// };
+Button.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
