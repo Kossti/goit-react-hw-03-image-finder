@@ -15,8 +15,6 @@ export class App extends Component {
     isLoading: false,
     error: null,
     failedRequest: false,
-
-    // searchName: false,
   };
 
   handleFormSubmit = async searchQuery => {
