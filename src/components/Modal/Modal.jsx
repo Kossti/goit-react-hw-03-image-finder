@@ -22,7 +22,7 @@ export default class Modal extends Component {
   }
 
   componentWillUnmount() {
-    document.addEventListener('keydown', this.handleKeyDown);
+    document.removeEventListener('keydown', this.handleKeyDown);
   }
 
   render() {
