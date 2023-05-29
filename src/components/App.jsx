@@ -25,7 +25,7 @@ export class App extends Component {
       if (response.length === 0) {
         this.setState({ failedRequest: true });
         toast.error('Nothing found!');
-      } else this.setState({ hits: response, failedRequest: false });
+      } else this.setState({ hits: response, page: 1 });
     } catch (error) {
       this.setState({ error });
     } finally {
